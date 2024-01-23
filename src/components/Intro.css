@@ -1,0 +1,109 @@
+/* componente principal */
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.Imagem-intro{
+  margin-left: 25%;
+  margin-bottom: 5%;
+}
+/* componente para o texto*/
+
+.Intro-logo{
+    color:#9370db;
+    font-weight:200;
+    max-width: 760px;
+    letter-spacing: 4px;
+    font-size: 3rem;
+}
+/* componente do conteiner do bootstrap */
+
+.container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* componente do botão baixar cv */
+.Curriculum button {
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #9370db;
+  padding: 10px;
+  min-width: 10vw; /* Em vez de width, use min-width para garantir a largura mínima */
+  color: white;
+  font-weight: 200;
+}
+
+/* componente do botão baixar cv em estado do mouse */
+.Curriculum button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* componente da imagem da logo */
+
+.img-thumbnail {
+    
+    width: 400px; /* Ajuste a largura conforme necessário */
+    height: 400px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Mantém as proporções e corta o excesso */
+    border-radius: 50%; /* Torna a imagem completamente circular */
+    margin-right: 20px; 
+    border: 4px solid #9370db;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+  
+  .Intro-logo {
+    margin-top: 20px; /* Ajuste conforme necessário para separação entre o texto e a imagem */
+  }
+  
+  .Imagem-intro {
+    align-self: flex-start; /* Alinha a imagem à esquerda dentro do contêiner flexível */
+  }
+  /* Adicione isso ao seu arquivo CSS (por exemplo, Intro.css) */
+
+
+  @media (max-width: 768px) {
+    .intro {
+      padding: 20px; /* Ajuste conforme necessário para dar mais espaço em telas menores */
+    }
+  
+    .Intro-logo {
+      font-size: 18px;
+    }
+  
+    .btn-curriculum {
+      font-size: 14px;
+    }
+  
+   
+    .img-thumbnail {
+   
+      width: 200px; /* Ajuste a largura conforme necessário */
+      height: 200px; /* Ajuste a altura conforme necessário */
+      object-fit: cover; /* Mantém as proporções e corta o excesso */
+      border-radius: 50%; /* Torna a imagem completamente circular */
+      margin-right: 20px; 
+      border: 4px solid #9370db;
+  }
+  .Curriculum button {
+    min-width: auto; /* Remove a largura mínima em telas menores */
+}
+
+  }
+  

@@ -1,0 +1,39 @@
+/* Default styles for larger screens */
+.aboutme {
+    margin-top: 10%;
+}
+
+h3 {
+    color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+    border: 2px solid #9370db;
+    border-radius: 8px;
+    background-color: #9370db;
+}
+
+.fw-light {
+    font-size: 1rem;
+    max-width: 760px;
+    color: #9370db;
+    text-align: justify;
+    margin-top: 5%;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+.styledSpan {
+    color: #696969;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    h3 {
+        font-size: 1rem;
+    }
+
+    .fw-light {
+        font-size: 0.8rem;
+        margin-top: 2%;
+    }
+}

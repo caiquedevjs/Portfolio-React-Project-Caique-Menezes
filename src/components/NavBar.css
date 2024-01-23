@@ -1,0 +1,71 @@
+.NavBar-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: whitesmoke;
+   
+}
+
+
+.head-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+   
+}
+.img-logo{
+    width: 200px; /* Ajuste a largura conforme necessário */
+    height: 100px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Mantém as proporções e corta o excesso */
+    border-radius: 50%; /* Torna a imagem completamente circular */
+    margin-right: 20px; 
+    border: 2px solid #9370db;
+    background-color: #9370db;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+    margin-inline: 3px;
+  
+    
+   
+}
+ svg:hover  {
+    transform: scale(1.2); /* Aumenta a escala ao passar o mouse */
+}
+
+.nav-link{
+    color: #9370db;
+}
+.nav-link:hover{
+    color: #696969;
+    text-decoration: #696969;
+}
+.nav-link:focus {
+    outline: none; /* Remove a borda de foco (pode ser opcional dependendo do design) */
+    text-decoration: none; /* Remove o sublinhado */
+    color:  #696969 !important; /* Defina a cor desejada, !important é usado para garantir que a regra seja aplicada */
+  }
+
+
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .NavBar-bar {
+        flex-direction: row;
+        
+        
+    }
+
+    .head-icons {
+        margin-left: 0;
+        margin-top: 10px;
+        flex-direction: column; /* Adiciona a direção de coluna para os ícones */
+        align-items: center; /* Alinha os ícones no centro verticalmente */
+    }
+}
+
