@@ -1,11 +1,11 @@
 /* Default styles for larger screens */
 .aboutme {
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 h3 {
     color: white;
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: 2px;
     border: 2px solid #9370db;
     border-radius: 8px;
@@ -13,7 +13,7 @@ h3 {
 }
 
 .fw-light {
-    font-size: 1rem;
+    font-size: 1.5rem;
     max-width: 760px;
     color: #9370db;
     text-align: justify;

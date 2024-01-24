@@ -22,6 +22,8 @@ const NavBar = () => {
 
   const styleWithHover = {
     color: '#696969',// Cor com hover
+    
+  
   };
   
   const activeStyle = {
@@ -29,13 +31,14 @@ const NavBar = () => {
   };
   const sizeLogo ={
     width: '100px',
+    marginRight: '20px'
   }
 
   const iconSize = 30; 
 
   return (
     <div className='NavBar-bar'>
-      <img src='/Sem-título.png' className='img-logo' style={sizeLogo}/>
+      <img src='/Sem-título.png' className='img-logo ' style={sizeLogo}/>
       <ul className="nav nav-underline">
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="#" style={activeStyle}>About-me</a>

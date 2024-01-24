@@ -1,0 +1,28 @@
+
+.projects-thumbnail {
+    transition: transform 0.3s ease-out, filter 0.3s ease-out;
+    filter: blur(5px);
+  }
+  
+  .projects-thumbnail:hover {
+    transform: scale(1.1);
+    filter: none;
+  }
+  .card {
+    margin-bottom: 0px; /* Remova qualquer margem inferior do card */
+  }
+  
+  .card-body {
+    padding: 1rem; /* Adicione algum preenchimento ao corpo do card para evitar espaçamento ao fazer hover */
+  }
+  .skills-user{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 5px;
+  }
+
+  .card-title{
+    color: #696969;
+  }

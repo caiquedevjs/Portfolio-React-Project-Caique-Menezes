@@ -5,7 +5,7 @@ import './Aboutme.css';
 const AboutMe = () => {
     return (
         <div className='aboutme'>
-            <h3>About-me</h3>
+            <h3>📢 About-me</h3>
 
             <p className="fw-light">
                 My name is Caique Menezes, I'm a <span className="styledSpan">front-end developer</span>, a{' '}
