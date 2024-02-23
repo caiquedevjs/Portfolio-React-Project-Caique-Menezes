@@ -24,8 +24,13 @@ h3 {
 
 .styledSpan {
     color: #696969;
+    font-weight: 500;
 }
-
+.img-aboutme{
+    margin-top: 40%;
+    width: 400px;
+    height: 400px;
+}
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
     h3 {

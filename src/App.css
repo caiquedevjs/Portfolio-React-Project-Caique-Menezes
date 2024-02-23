@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  background-color:whitesmoke;
+  background-color:white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,11 @@
   font-size: calc(10px + 2vmin);
   
 }
+.component-container {
+  margin-bottom: 10%; /* Ou o valor que preferir */
+}
+/* No arquivo App.css */
+
 
 .App-link {
   color: #61dafb;

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-unused-vars */
@@ -7,10 +8,11 @@ import { FaGithub } from "react-icons/fa";
 import { RiLinkedinFill } from "react-icons/ri";
 import { FaDiscord } from "react-icons/fa";
 import './NavBar.css';
-import  { useState } from 'react';
-
+import { useState } from 'react';
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 const NavBar = () => {
+  
 
   const [isGithubHovered, setIsGithubHovered] = useState(false);
   const [isLinkedinHovered, setIsLinkedinHovered] = useState(false);
@@ -22,10 +24,8 @@ const NavBar = () => {
 
   const styleWithHover = {
     color: '#696969',// Cor com hover
-    
-  
   };
-  
+
   const activeStyle = {
     color: '#696969',
   };
@@ -34,37 +34,34 @@ const NavBar = () => {
     marginRight: '20px'
   }
 
-  const iconSize = 30; 
+  const iconSize = 30;
 
   return (
     <div className='NavBar-bar'>
-      <img src='/Sem-título.png' className='img-logo ' style={sizeLogo}/>
-      <ul className="nav nav-underline">
+      
+      <img src='/memojiAppleDev-Caique.png' className='img-logo ' style={sizeLogo}/>
+      <ul className="nav nav-underline" style={{marginRight: '5%'}}>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#" style={activeStyle}>About-me</a>
+          <a className="nav-link active" aria-current="page" href="#" style={activeStyle}>Me</a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Skill</a>
-        </li>
+       
         <li className="nav-item">
           <a className="nav-link" href="#">Projects</a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Contacts</a>
-        </li>
+        
       </ul>
       <div className='head-icons'>
         <FaGithub size={iconSize} style={isGithubHovered ? styleWithHover : styleWithoutHover}
-        onMouseEnter={() => setIsGithubHovered(true)}
-        onMouseLeave={() => setIsGithubHovered(false)}/>
+          onMouseEnter={() => setIsGithubHovered(true)}
+          onMouseLeave={() => setIsGithubHovered(false)} />
 
-        <RiLinkedinFill size={iconSize}  style={isLinkedinHovered ? styleWithHover : styleWithoutHover}
-        onMouseEnter={() => setIsLinkedinHovered(true)}
-        onMouseLeave={() => setIsLinkedinHovered(false)}/>
+        <RiLinkedinFill size={iconSize} style={isLinkedinHovered ? styleWithHover : styleWithoutHover}
+          onMouseEnter={() => setIsLinkedinHovered(true)}
+          onMouseLeave={() => setIsLinkedinHovered(false)} />
 
         <FaDiscord size={iconSize} style={isDiscordHovered ? styleWithHover : styleWithoutHover}
-        onMouseEnter={() => setIsDiscordHovered(true)}
-        onMouseLeave={() => setIsDiscordHovered(false)}/>
+          onMouseEnter={() => setIsDiscordHovered(true)}
+          onMouseLeave={() => setIsDiscordHovered(false)} />
       </div>
     </div>
   );

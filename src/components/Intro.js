@@ -1,17 +1,16 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import './Intro.css';
 import { GoMoveToTop } from "react-icons/go";
-import {useState,useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
-
-const styledSpan={
+const styledSpan = {
   color: '#696969',
   fontWeight: '500'
-}
-
-
+  
+};
 
 const TypewriterEffect = ({ text }) => {
   const [displayedText, setDisplayedText] = useState('');
@@ -53,39 +52,49 @@ const Intro = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  
-
   return (
     <div className="intro">
-      <button className="scroll-to-top-btn" onClick={handleScrollToTop}>
-      <GoMoveToTop />
-      </button>
-      <div className='Imagem-intro'>
-        <img src="/Design sem nome(1).png" className="img-thumbnail" alt="..." />
-      </div>
-      <div className='skills-icons-content '>
-      <img src='/HTML.svg' className='skills-icons'/>
-      <img src='/CSS.svg' className='skills-icons'/>
-      <img src='/JavaScript.svg' className='skills-icons'/>
-      <img src='/Python-Dark.svg' className='skills-icons'/>
-      <img src='/React-Dark.svg' className='skills-icons'/>
-      <img src='/NodeJS-Dark.svg' className='skills-icons'/>
-      <img src='/Bootstrap.svg' className='skills-icons'/>
-      <img src='/ExpressJS-Dark.svg' className='skills-icons'/>
-      <img src='/TailwindCSS-Dark.svg' className='skills-icons'/>
-      <img src='/VueJS-Dark.svg' className='skills-icons'/>
-      <img src='/MongoDB.svg' className='skills-icons'/>
-      <img src='/Netlify-Dark.svg' className='skills-icons'/>
-      <img src='/Webpack-Dark.svg' className='skills-icons'/>
       
+      <div className="col-md-1" onClick={handleScrollToTop}>
+            <img src="/memojiHi2-Caique.png" alt="Right Image" style={{ width: '100%' }} />
+              
+          </div>
       
-      
-      </div>
       <div className="container-fluid">
-        <h1 className='Intro-logo'><span role="img" aria-label="Wave" className="wave">👋🏼</span> , my name is Caique and I'm a{' '} <span style={styledSpan}><TypewriterEffect text="front-end developer." /></span></h1>
+        <div className="row">
+          <div className="col-md-6">
+            <div className='Imagem-intro'>
+              <img src="/Design_sem_nome_1_-removebg-preview.png" className="img-thumbnail" alt="..." />
+            </div>
+            <div className='skills-icons-content'>
+            
+            <img src='/HTML.svg' className='skills-icons' alt='HTML' />
+            <img src='/CSS.svg' className='skills-icons' alt='CSS' />
+            <img src='/JavaScript.svg' className='skills-icons' alt='JavaScript' />
+            <img src='/Python-Dark.svg' className='skills-icons' alt='Python' />
+            <img src='/React-Dark.svg' className='skills-icons' alt='React' />
+            <img src='/VueJS-Dark.svg' className='skills-icons' alt='Vue' />
+            <img src='/NodeJS-Dark.svg' className='skills-icons' alt='Node' />
+            <img src='MongoDB.svg' className='skills-icons' alt='MongoDB' />
+            <img src='TailwindCSS-Dark.svg' className='skills-icons' alt='Tailwind' />
+            <img src='Netlify-Dark.svg' className='skills-icons' alt='Netlify' />
+            <img src='Webpack-Dark.svg' className='skills-icons' alt='Webpack' />
+            
+            
       </div>
-      
-      
+          </div>
+          <div className="col-md-6">
+            <div className='skills-icons-content '>
+              
+              {/* Adicione seus ícones de habilidades aqui */}
+            </div>
+            <h1 className='Intro-logo' style={{ marginTop: '50px', marginLeft: '20px' }}>
+              <span role="img" aria-label="Wave" className="wave">👋🏼</span> my name is Caique and I'm a{' '}
+              <span style={styledSpan}><TypewriterEffect text="front-end developer." /></span>
+            </h1>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
