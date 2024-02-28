@@ -23,11 +23,11 @@ const NavBar = () => {
   };
 
   const styleWithHover = {
-    color: '#696969',// Cor com hover
+    color: '#9370db',// Cor com hover
   };
 
   const activeStyle = {
-    color: '#696969',
+    color: '#9370db',
   };
   const sizeLogo ={
     width: '100px',

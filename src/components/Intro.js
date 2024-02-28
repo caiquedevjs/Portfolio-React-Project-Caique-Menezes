@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const styledSpan = {
-  color: '#696969',
+  color: '#9370db',
   fontWeight: '500'
   
 };

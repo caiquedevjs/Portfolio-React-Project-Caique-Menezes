@@ -18,7 +18,7 @@ h3 {
 
 .fw-light {
     font-size: 1.5rem;
-    color: #9370db;
+    color: white;
     text-align: justify;
     margin-top: 5%;
     letter-spacing: 2px;
@@ -27,7 +27,7 @@ h3 {
 }
 
 .styledSpan {
-    color: #696969;
+    color: #9370db;
     font-weight: 500;
 }
 .img-aboutme{

@@ -65,14 +65,14 @@ svg {
     font-family: "Pixelify Sans", sans-serif;
 }
 .nav-link:hover{
-    color: #696969;
-    text-decoration: #696969;
+    color: #9370db;
+    text-decoration: #9370db;
     transition: 1s;
 }
 .nav-link:focus {
     outline: none; /* Remove a borda de foco (pode ser opcional dependendo do design) */
     text-decoration: none; /* Remove o sublinhado */
-    color:  #696969 !important; /* Defina a cor desejada, !important é usado para garantir que a regra seja aplicada */
+    color:  #9370db !important; /* Defina a cor desejada, !important é usado para garantir que a regra seja aplicada */
   }
 
 

@@ -11,14 +11,11 @@ const AboutMe = () => {
         
           <h3 className='quem-SouText'>Quem sou eu</h3>
           <p className="fw-light">
-          <span className='wave'>👾  </span> My name is Caique Menezes, I'm a{' '}
-            <span className="styledSpan">front-end developer</span>, a{' '}
-            <span className="styledSpan">Computing student</span> at the Federal University
-            of Bahia and a <span className="styledSpan">Systems Analysis and Development student </span>
-            at the Salvador University. Passionate about{' '}
-            <span className="styledSpan">technology and development</span>, I dedicate myself
-            daily to studies in the area of web development, my journey as a dev is just beginning,
-            and I am always willing to learn new things and expand my potential to the maximum.
+          <span className='wave'>👾  </span> Meu nome é  Caique Menezes, eu sou um{' '}
+            <span className="styledSpan">desenvolvedor web</span>, atualmente sou{' '}
+            <span className="styledSpan">estudante de computação</span> da Universidade Federal da Bahia (UFBA) e estudante de  <span className="styledSpan">Análise e desenvolvimento de sistemas</span> da Universidade Salvador (UNIFACS).
+            Apaixonado por{' '}
+            <span className="styledSpan"> tecnologia e desenvolvimento</span>, dedico diariamente aos estudos na área de desenvolvimento web, minha jornada como dev só está começando e estou sempre disposto a aprender coisas novas e expandir minhas potencialidades ao máximo.
           </p>
         
       
