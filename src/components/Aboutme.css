@@ -9,17 +9,21 @@ h3 {
     letter-spacing: 2px;
     border: 2px solid #9370db;
     border-radius: 8px;
-    background-color: #9370db;
+    background-color: transparent;
+    font-family: "Pixelify Sans";
+}
+.quem-SouText{
+    color: white;
 }
 
 .fw-light {
     font-size: 1.5rem;
-    max-width: 760px;
     color: #9370db;
     text-align: justify;
     margin-top: 5%;
     letter-spacing: 2px;
     font-weight: 200;
+    font-family: "Pixelify Sans"
 }
 
 .styledSpan {

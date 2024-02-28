@@ -19,7 +19,7 @@ const NavBar = () => {
   const [isDiscordHovered, setIsDiscordHovered] = useState(false);
 
   const styleWithoutHover = {
-    color: '#9370db', // Cor padrão sem hover
+    color: 'white', // Cor padrão sem hover
   };
 
   const styleWithHover = {
@@ -39,7 +39,7 @@ const NavBar = () => {
   return (
     <div className='NavBar-bar'>
       
-      <img src='/memojiAppleDev-Caique.png' className='img-logo ' style={sizeLogo}/>
+     <div className='logotext'> //Hello, World!</div>
       <ul className="nav nav-underline" style={{marginRight: '5%'}}>
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="#" style={activeStyle}>Me</a>

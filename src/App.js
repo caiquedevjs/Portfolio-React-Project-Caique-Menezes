@@ -22,7 +22,7 @@ function App() {
           <AboutMe />
         </div>
         <div className="component-container">
-          <Projects />
+         
         </div>
       </header>
     </div>

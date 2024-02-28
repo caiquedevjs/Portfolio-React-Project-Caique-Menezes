@@ -4,11 +4,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: white;
+    background-color: #181422;
    
 }
 
-
+.logotext{
+  color: white;
+  font-family: "Pixelify Sans", sans-serif;
+}
 .head-icons {
     position: fixed;
   bottom: 10px; /* ajuste conforme necessário para a posição vertical */
@@ -58,8 +61,8 @@ svg {
 }
 
 .nav-link{
-    color: #9370db;
-    font-family: 'Concert One', sans-serif;
+    color: white;
+    font-family: "Pixelify Sans", sans-serif;
 }
 .nav-link:hover{
     color: #696969;

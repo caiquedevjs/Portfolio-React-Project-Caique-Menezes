@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/role-supports-aria-props */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable no-unused-vars */
@@ -5,13 +6,14 @@ import React from 'react';
 import './Intro.css';
 import { GoMoveToTop } from "react-icons/go";
 import { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const styledSpan = {
   color: '#696969',
   fontWeight: '500'
   
 };
-
+ 
 const TypewriterEffect = ({ text }) => {
   const [displayedText, setDisplayedText] = useState('');
   const [index, setIndex] = useState(0);
@@ -56,17 +58,21 @@ const Intro = () => {
     <div className="intro">
       
       <div className="col-md-1" onClick={handleScrollToTop}>
-            <img src="/memojiHi2-Caique.png" alt="Right Image" style={{ width: '100%' }} />
-              
-          </div>
-      
+  <button className="btn btn-light" style={{ width: '50%' }}>
+    <GoMoveToTop/>
+  </button>
+</div>
+
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-6">
             <div className='Imagem-intro'>
-              <img src="/Design_sem_nome_1_-removebg-preview.png" className="img-thumbnail" alt="..." />
+              <img src="/musashi.jpg" className="img-thumbnail" alt="imagem-perfil" />
             </div>
+            <h3 className="skillsText mt-3 text-center" style={{ border: '2px solid #9370db', borderRadius: '8px', padding: '5px', width: '50%', marginLeft: '35%'}}>Skills</h3>
+
             <div className='skills-icons-content'>
+              
             
             <img src='/HTML.svg' className='skills-icons' alt='HTML' />
             <img src='/CSS.svg' className='skills-icons' alt='CSS' />
@@ -79,20 +85,42 @@ const Intro = () => {
             <img src='TailwindCSS-Dark.svg' className='skills-icons' alt='Tailwind' />
             <img src='Netlify-Dark.svg' className='skills-icons' alt='Netlify' />
             <img src='Webpack-Dark.svg' className='skills-icons' alt='Webpack' />
+
             
+                      
             
       </div>
           </div>
           <div className="col-md-6">
-            <div className='skills-icons-content '>
-              
-              {/* Adicione seus ícones de habilidades aqui */}
-            </div>
+         
             <h1 className='Intro-logo' style={{ marginTop: '50px', marginLeft: '20px' }}>
-              <span role="img" aria-label="Wave" className="wave">👋🏼</span> my name is Caique and I'm a{' '}
-              <span style={styledSpan}><TypewriterEffect text="front-end developer." /></span>
+              Meu nome é Caique, eu sou um{' '}
+              <span style={styledSpan}><TypewriterEffect text="desenvolvedor web." /></span>
             </h1>
           </div>
+          
+          <div className="col-md-6" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '5%', marginLeft: '5%'}}>
+          <h3 className="skillsText mt-3 text-center" style={{ border: '2px solid #9370db', borderRadius: '8px', padding: '5px', width: '50%'}}>Stack</h3>
+  <div className="progress mb-3" style={{ width: '50%' }} role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+    <div className="progress-bar bg-success" style={{ width: "50%" }}> Node.js 50%</div>
+  </div>
+  <div className="progress mb-3" style={{ width: '50%' }} role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+    <div className="progress-bar bg-primary" style={{ width: "60%" }}>CSS 60%</div>
+  </div>
+  <div className="progress mb-3" style={{ width: '50%' }} role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+    <div className="progress-bar bg-info" style={{ width: "50%" }}>React.js 50%</div>
+  </div>
+  <div className="progress mb-3" style={{ width: '50%' }} role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+    <div className="progress-bar bg-warning" style={{ width: "75%" }}>JavaScript 90%</div>
+  </div>
+  <div className="progress" style={{ width: '50%' }} role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+    <div className="progress-bar bg-orange-custom" style={{ width: "90%" }}>HTML 90%</div>
+  </div>
+</div>
+
+
+
+
         </div>
       </div>
     </div>
